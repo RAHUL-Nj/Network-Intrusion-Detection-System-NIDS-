@@ -1,0 +1,43 @@
+Prerequisites:
+1. Python Installation:
+
+- Ensure that Python is installed on your system. You can download it from the official Python website: Python Downloads.
+
+2. Scapy Installation:
+Install the Scapy library using the following command:
+    bash
+  pip install scapy
+
+Usage Instructions:
+1. Download the Script:
+Download the Python script for the NIDS with Scapy.
+
+2. Open a Terminal or Command Prompt:
+Navigate to the directory where you downloaded the script.
+
+3. Run the Script:
+Execute the script by running the following command:
+bash
+     Copy code
+python nids_with_scapy.py
+
+#The script will prompt you for the following inputs:
+- Network Interface: Enter the network interface you want to monitor (e.g., "eth0" or "wlan0").
+- Source IP Filter: Optionally, enter the source IP address for filtering (press Enter for no filter).
+- Destination IP Filter: Optionally, enter the destination IP address for filtering (press Enter for no filter).
+
+4. Observe the Output:
+- The script will start capturing and analyzing network packets based on your configuration.
+- Information about the packets, including source and destination IP addresses, protocol, and ports, will be displayed in the terminal.
+
+5. Intrusion Detection Alerts:
+- If the script detects potential threats based on the predefined intrusion detection logic, it will generate alerts and log them to an "intrusion_log.txt" file.
+
+6. Review Logs:
+- Open the "intrusion_log.txt" file to review the logged alerts along with timestamps.
+
+Customization (Optional):
+Customize Intrusion Detection Logic:
+- Modify the script to add or customize intrusion detection rules based on your specific requirements. Look for the process_packet function in the script.
+-Adjust Default Options:
+If needed, modify the default network interface options in the script to include other interfaces commonly used in your environment.
